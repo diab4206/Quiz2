@@ -1,0 +1,181 @@
+/* Réinitialisation des marges et des espacements par défaut pour tous les éléments,
+   définition de la police de caractère et du modèle de boîte */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #001e4d;
+}
+/* Style pour le conteneur principal de l'application */
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: 600;
+}
+/* Style pour les boutons de réponse */
+.btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+/* Style pour l'état au survol des boutons */
+.btn:hover {
+  background: #222;
+  color: #fff;
+}
+/* Style pour le bouton Next */
+#next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+/* Style pour les réponses correctes */
+.correct {
+  background: #9aeabc;
+}
+/* Style pour les réponses incorrectes */
+.incorrect {
+  background: #ff9393;
+}
+
+/* Responsive Styles */
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .app {
+    padding: 20px;
+    margin: 50px auto 0;
+  }
+
+  .app h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .quiz h2 {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 8px;
+    margin: 8px 0;
+  }
+
+  #next-btn {
+    width: 120px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .app {
+    padding: 25px;
+    margin: 80px auto 0;
+  }
+
+  .app h1 {
+    font-size: 22px;
+    padding-bottom: 25px;
+  }
+
+  .quiz h2 {
+    font-size: 17px;
+  }
+
+  .btn {
+    padding: 9px;
+    margin: 9px 0;
+  }
+
+  #next-btn {
+    width: 130px;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 901px) {
+  .app {
+    padding: 30px;
+    margin: 100px auto 0;
+  }
+
+  .app h1 {
+    font-size: 25px;
+    padding-bottom: 30px;
+  }
+
+  .quiz h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #next-btn {
+    width: 150px;
+  }
+}
+/* Style pour le bouton Recommencer */
+#restart-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none; /* Cache le bouton au départ */
+  margin: 20px auto 0; /* Centre horizontalement */
+  text-align: center; /* Aligne le texte au centre du bouton */
+}
+
+/* Conteneur pour centrer verticalement (optionnel) */
+#restart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur de la vue pour centrer verticalement */
+}

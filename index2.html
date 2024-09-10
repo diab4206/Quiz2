@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <!-- liaison entre html et css -->
+    <link rel="stylesheet" href="./styles2.css" />
+  </head>
+  <body>
+    <!-- Conteneur principal de l'application de quiz -->
+    <div class="app">
+      <h1>Simple Quiz</h1>
+      <div class="quiz">
+        <!-- Élément pour afficher la question du quiz -->
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-buttons">
+          <!-- Boutons pour les réponses du quiz -->
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+        <!-- Bouton pour passer à la question suivante -->
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+    <button id="restart-btn" style="display: none">Recommencer</button>
+    <!-- Liaison  entre html et js -->
+    <script src="./app.js"></script>
+  </body>
+</html>
